@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predicción de Dibujo</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> <!-- Cargar TensorFlow.js -->
+  <script src="script.js" defer></script> <!-- Archivo de JavaScript -->
+  <link rel="stylesheet" href="style.css"> <!-- (Opcional) Estilos -->
+</head>
+<body>
+  <h1>Dibuja y Predice</h1>
+  <div>
+    <canvas id="canvas" width="224" height="224"></canvas> <!-- Área para dibujar -->
+  </div>
+  <div>
+    <button id="predictButton">Hacer Predicción</button>
+    <p id="status">Cargando el modelo...</p> <!-- Mensaje de carga -->
+    <p id="result"></p> <!-- Resultado de la predicción -->
+  </div>
+</body>
+</html>
